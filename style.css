@@ -90,6 +90,9 @@
 }
 .lava-cake{
     height: 457px;
+    position: absolute;
+    right: 78px;
+    top: 148px;
 }
 .sidepic-ovr{
     height: 592px;
@@ -331,4 +334,58 @@
 }
 #bst-sell{
     margin-top: 40px;
+}
+@media all and (max-width:800px){
+    
+    .nav-1,.cntct-icon,.ft-3,.ft-h,.ft-p{
+        display: none;
+    }
+    .head-sec{
+        justify-content: center;
+    }
+    .side-pic{
+        display: block;
+    }
+    .sidepic-ovr{
+        height: 592px;
+        position: absolute;
+        right: 16px;
+        top: 662px;
+        z-index: -1
+    }
+    .mem,.cakes,.spt-lava,.spt-lavap{
+        text-align: center;
+    }
+    .ordr-div{
+        justify-content:center ;
+    }
+    .cake-boxes{
+        display: grid;
+        gap: 30pX;
+    }
+    .test svg{
+        margin-top: -5rem;
+        width: 100%;
+    }
+    .lava-cake{
+        position: absolute;
+        top: 450px;
+        left: 84px;
+    }
+    .spt-lava{
+        margin-top: 500px;
+    }
+    .sidepic-ovr{
+        right: 144px;
+        
+    }
+    .sells-navul{
+        gap: 45px;
+    }
+    .mem{
+        font-size: 40px;
+    }
+    .cakes{
+        font-size: 24px;
+    }
 }
