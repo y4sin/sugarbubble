@@ -8,23 +8,34 @@
     <title>Sugar Bubble</title>
     <link href="https://api.fontshare.com/v2/css?f[]=montserrat@500,900,700,701,801,200,401,301,400,601,100,101,201,800,300,600,901,501&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4e79bafb4.js" crossorigin="anonymous"></script>
     <link href="https://api.fontshare.com/v2/css?f[]=bonny@700,300,500,400,100&f[]=montserrat@500,700,701,801,200,401,301,400,601,100,101,201,800,300,600,501&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="flex head-sec container" >
+        <div class="bars">
+           <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
         <div>
             <h1 class="brand">Sugar Bubble</h1>
         </div>
         <nav class="nav-1">
             <div class="nav-menu">
                 <ul class="flex">
-                    <li><a href="#">MENU</a></li>
+                    <li><a href="#" id="nu">MENU</a></li>
                     <li><a href="#">CUSTOM CAKE</a></li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#abt-t">ABOUT</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
+                <div id="open" class="close">
+                    <li><a href="./cake.html">Cakes</a></li>
+                    <li><a href="">Muffins</a></li>
+                    <li><a href="">Cup Cake</a></li>
+                    <li><a href="">Popscile</a></li>
+                </div>
             </div>
         </nav>
+        <script src="./main.js" ></script>
         <div class="cntct-icon">
             <a href=""><img src="./media/Vector.png" alt="" ></a>
             <a href=""><img src="./media/fb.png" alt=""></a>
@@ -145,13 +156,13 @@
         <div class="rw-div">
             <div class="flex review">
                 <div>
-                    <img src="./media/Star 2.png" alt="">
+                    <img class="star" src="./media/Star 2.png" alt="">
                 </div>
                 <div>
                     <h1 class="rw-h">Why people love Sugar Bubble cakes</h1>
                 </div>
                 <div>
-                    <img src="./media/Star 2.png" alt="">
+                    <img class="star" src="./media/Star 2.png" alt="">
                 </div>
             </div>
             <div class="rw-psec">
@@ -162,13 +173,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="abt-t">
         <div>
             <div>
                 <h1 class="abt-h">About us</h1>
             </div>
             <div>
-                <p class="abt-p">Sugar Bubble is a cake shop that makes you happy. We are a team of bakers who love to create amazing cakes for any occasion. We use fresh and quality ingredients and bake everything from scratch. We can customize your cake with any flavor, filling, frosting, and decoration you want. Our cakes are delicious and beautiful. We offer online ordering, delivery, and free consultations and tastings. Come and visit us today and see why we are the best cake shop in town.</p>
+                <p class="abt-p ">Sugar Bubble is a cake shop that makes you happy. We are a team of bakers who love to create amazing cakes for any occasion. We use fresh and quality ingredients and bake everything from scratch. We can customize your cake with any flavor, filling, frosting, and decoration you want. Our cakes are delicious and beautiful. We offer online ordering, delivery, and free consultations and tastings. Come and visit us today and see why we are the best cake shop in town.</p>
             </div>
         </div>
     </div>
@@ -224,7 +235,7 @@
             <div class="email-div flex">
                 <input class="email-inp" type="text" placeholder="Email">
                 <div>
-                    <img src="./media/plane.png" alt="">
+                    <img class="plane" src="./media/plane.png" alt="">
                 </div>
             </div>
         </div>
@@ -235,7 +246,7 @@
             <div class="ft-3bar">
                 <ul>
                     <li><a href="">MENU</a></li>
-                    <li><a href="">ABOUT</a></li>
+                    <li><a href="#abt-t">ABOUT</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>

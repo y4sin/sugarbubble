@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0;
     font-family: 'Bonny', serif;
+    scroll-behavior: smooth;
 }
 .container{
     padding: 2rem 5rem;
@@ -161,7 +162,7 @@
     color: #FF6B00;
     background-color: white;
     border: solid 1.5px;
-    transition: ease-in-out .2s;
+    transition: ease-in-out .3s;
 }
 .cake-boxes{
     justify-content: space-around;
@@ -335,13 +336,35 @@
 #bst-sell{
     margin-top: 40px;
 }
+#open{
+    list-style: none;
+    font-weight: 500;
+    position: absolute;
+    line-height: 2.5;
+    display: block ;
+    padding-top: 15px;
+}
+#open a:focus{
+    color: #FF6B00;
+}
+.close{
+    display: none !important;
+}
+.abt-t{
+}
+.fa-bars{
+    color: #FF6B00;
+}
+.bars{
+    display: none;
+}
 @media all and (max-width:800px){
-    
-    .nav-1,.cntct-icon,.ft-3,.ft-h,.ft-p{
+    .nav-1,.cntct-icon,.ft-3,.ft-h,.ft-p,.icon-2{
         display: none;
     }
     .head-sec{
-        justify-content: center;
+    justify-content: flex-start;
+    gap: 80px;
     }
     .side-pic{
         display: block;
@@ -384,12 +407,58 @@
         
     }
     .sells-navul{
-        gap: 45px;
+        gap: 6px;
     }
     .mem{
         font-size: 40px;
     }
     .cakes{
         font-size: 24px;
+    }
+    .email-div{
+       width: auto;
+       justify-content: space-evenly;
+       padding: 0px;
+       align-items: center;
+    }
+    .test svg{
+        height: 205px;
+        width: 100%;
+    }
+    .rw-h{
+        font-size: 20px;
+        padding: 0px 10px 0px 10px;
+    }
+    .review{
+        align-items:center ;
+    }
+    .star{
+        height: 20px;
+    }
+    .rw-p{
+        font-size: 16px;
+        padding: 0px 10px 0px 10px;
+    }
+    .name-h{
+        font-size: 18px;
+    }
+    .abt-h,.off-h{
+        font-size: 24px;
+    }
+    .abt-p{
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .off-p{
+        font-size: 16px;
+    }
+    .pic-btn{
+        padding: 8px 35px 8px 35px;
+    }
+    .plane{
+        height: 16px;
+    }
+    .bars{
+        display: block
     }
 }
