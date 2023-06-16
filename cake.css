@@ -33,9 +33,6 @@
     color: #FF6B00;
     font-size: 40px;
     text-decoration: none;
-    position: absolute;
-    top: 15px;
-    left: 91px;
 }
 .cntct-icon{
     display: flex;
@@ -72,8 +69,9 @@ hr{
     width: 114px;
     border-radius: 10px;
     position: absolute;
-    right: 1204px;
-    top: 359px;
+    margin-top: -5px;
+    /* right: 1204px;
+    top: 359px; */
     }
 .line1{
     height: 5px;
@@ -87,6 +85,7 @@ border-radius: 10px;
 }
 .flt-price{
     margin: 50px 0px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 .price-range{
@@ -236,13 +235,31 @@ border-radius: 10px;
 .bars{
     display: none;
 }
+.lines{
+    position: relative;
+}
+
 .filt-op{
-    display: block;
+    /* display: block; */
+    width: 0;
     position: fixed;
+    overflow: hidden;
     background-color: aqua;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    transition: width .4s ease;
     height: 100%;
+    box-shadow: -4.7px 0.4px 1.9px rgba(0, 0, 0, 0.031),
+                -10.9px 1px 4.3px rgba(0, 0, 0, 0.045),
+                -19.5px 1.7px 7.7px rgba(0, 0, 0, 0.055),
+                -32.4px 2.9px 12.8px rgba(0, 0, 0, 0.065),
+                -53.4px 4.8px 21.2px rgba(0, 0, 0, 0.075),
+                -93.4px 8.3px 37px rgba(0, 0, 0, 0.089),
+                -202px 18px 80px rgba(0, 0, 0, 0.12);
+}
+.filt-op.hidden{
+    width: 70% !important;
 }
 @media all and (max-width:800px){
     #rm-nav{
@@ -296,9 +313,9 @@ border-radius: 10px;
         width: 98px;
         border-radius: 10px;
         position: absolute;
-        right: 106px;
-        top: 94;
-        top: 135px;
+        /* right: 212px; */
+        /* top: 94px; */
+        /* top: 135px; */
     }
     .cls{
         text-align: end;
@@ -315,6 +332,9 @@ border-radius: 10px;
     top: 122px;
     }
     .price-range{
-        margin-bottom: 20px;
+    margin-bottom: 20px;
+    }
+    .money-range,.money-rate{
+    font-family: 'Montserrat', sans-serif !important;
     }
 }

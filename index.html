@@ -14,7 +14,7 @@
 <body>
     <header class="flex head-sec container" >
         <div class="bars">
-           <a href=""><i class="fa-solid fa-bars"></i></a>
+           <a href="#" id="mobilemenu"><i class="fa-solid fa-bars"></i></a>
         </div>
         <div>
             <h1 class="brand">Sugar Bubble</h1>
@@ -29,21 +29,36 @@
                 </ul>
                 <div id="open" class="close">
                     <li><a href="./cake.html">Cakes</a></li>
-                    <li><a href="">Muffins</a></li>
-                    <li><a href="">Cup Cake</a></li>
-                    <li><a href="">Popscile</a></li>
+                    <li><a href="#">Muffins</a></li>
+                    <li><a href="#">Cup Cake</a></li>
+                    <li><a href="#">Popscile</a></li>
                 </div>
             </div>
         </nav>
-        <script src="./main.js" ></script>
         <div class="cntct-icon">
-            <a href=""><img src="./media/Vector.png" alt="" ></a>
-            <a href=""><img src="./media/fb.png" alt=""></a>
+            <a href="#"><img src="./media/Vector.png" alt="" ></a>
+            <a href="#"><img src="./media/fb.png" alt=""></a>
         </div>
     </header>
-    <section id="spotlight" class="container">
-        <div class= "side-pic">
-            <div>
+    <div class="hidden-box" id="hidden-div">
+        <div class="hidden-menu">
+            <h1>MENU</h1>
+        </div>
+        <div class="hidden-list">
+            <ul>
+                <li><a href="./cake.html">Cakes</a></li>
+                <li><a href="#">Muffins</a></li>
+                <li><a href="#">CupCakes</a></li>
+                <li><a href="#">Popsicle</a></li>
+            </ul>
+        </div>
+        <div class="hidden-close">
+            <i id="mmm" class="fa-regular fa-circle-xmark"></i>
+        </div>
+    </div>
+    <section id="spotlight" class="container flex">
+        <div class="side-pic">
+            <div class="sideover">
                 <div class="spt-abt">
                     <h1 class="mem">Make Every <br> Occasion Memorable</h1>
                     <h1 class="cakes">with Our Delectable Cakes</h1>          
@@ -57,14 +72,9 @@
                     <p class="btn-p">₹ 650</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img class="lava-cake" src="./media/Rectangle 1.png" alt="">
-                </div>
-            </div>
         </div>
-        <div>
-            <img class="sidepic-ovr" src="./media/Rectangle 2.png" alt="">
+        <div class="main-img">
+            <img src="./media/Rectangle 1.png" alt="">
         </div>
     </section>
     <section id="bst-sell">
@@ -221,8 +231,8 @@
                 <p class="ft-p1">Baking your dreams <br> come true.</p>
             </div>
             <div class="icon-2">
-                <a href=""><img src="./media/Vector.png" alt="" ></a>
-                <a href=""><img src="./media/fb.png" alt=""></a>
+                <a href="#"><img src="./media/Vector.png" alt="" ></a>
+                <a href="#"><img src="./media/fb.png" alt=""></a>
             </div>
         </div>
         <div class="ft-2">
@@ -245,12 +255,13 @@
             </div>
             <div class="ft-3bar">
                 <ul>
-                    <li><a href="">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
                     <li><a href="#abt-t">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="./main.js" ></script>
 </body>
 </html>

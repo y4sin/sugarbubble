@@ -5,13 +5,45 @@ cake.addEventListener('click',()=>{
     down.classList.toggle('hides')
 })
 
-var filter = document.getElementById('fps');
-var xmark2 = document.getElementById('ccc');
-var filter2 = document.getElementById('filter-by');
+var filterBox =document.getElementById('fps')
+var filterClose =document.getElementById('ccc')
+var filterOpen =document.getElementById('filterby')
 
-filter2.addEventListener('click',()=>{
-    filter.classList.remove('hide')
+filterOpen.addEventListener('click',(event)=>{
+    filterBox.classList.add('hidden')
+    event.stopPropagation()
 })
-xmark2.addEventListener('click',()=>{
-    filter.classList.remove('hide')
-} )
+filterClose.addEventListener('click',(event)=>{
+    if (filterBox.classList.contains('hidden')) {
+        filterBox.classList.remove('hidden')
+    }
+})
+filterBox.addEventListener('click',(event)=>{
+    event.stopPropagation()
+})
+
+var icon = document.getElementById('mobilemenu-2')
+var hiddenBox = document.getElementById('hidden-div')
+
+icon.addEventListener('click',(event)=>{
+    hiddenBox.classList.toggle('hidden')
+    event.stopPropagation();
+})
+hiddenBox.addEventListener('click',(event)=>{
+    event.stopPropagation();
+})
+var closeIcon = document.getElementById('mmm')
+closeIcon.addEventListener('click',(event)=>{
+    if(hiddenBox.classList.contains('hidden')){
+        hiddenBox.classList.remove('hidden')
+    }
+    // event.stopPropagation();
+})
+document.addEventListener('click',()=>{
+    if(hiddenBox.classList.contains('hidden')){
+        hiddenBox.classList.remove('hidden')
+    }
+    if (filterBox.classList.contains('hidden')) {
+        filterBox.classList.remove('hidden')
+    }
+})

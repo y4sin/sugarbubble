@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Sugar bubble</title>
     <link rel="stylesheet" href="./cake.css">
-    <link rel="stylesheet" href="./cake.js">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a4e79bafb4.js" crossorigin="anonymous"></script>
     <link
         href="https://api.fontshare.com/v2/css?f[]=bonny@700,300,500,400,100&f[]=montserrat@500,700,701,801,200,401,301,400,601,100,101,201,800,300,600,501&display=swap"
@@ -19,7 +19,7 @@
 <body>
     <header class="flex head-sec container">
         <div class="bars">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" id="mobilemenu-2"><i class="fa-solid fa-bars"></i></a>
          </div>
         <div>
             <h1 class="brand"><a href="./index.html">Sugar Bubble</a></h1>
@@ -27,18 +27,40 @@
         <nav id="rm-nav">
             <div class="nav-menu">
                 <ul class="flex">
-                    <li><a href="#">MENU</a></li>
+                    <li><a href="#" id="nu">MENU</a></li>
                     <li><a href="#">CUSTOM CAKE</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
+                <div id="open" class="close">
+                    <li><a href="./cake.html">Cakes</a></li>
+                    <li><a href="#">Muffins</a></li>
+                    <li><a href="#">Cup Cake</a></li>
+                    <li><a href="#">Popscile</a></li>
+                </div>
             </div>
         </nav>
         <div class="cntct-icon">
-            <a href=""><img src="./media/Vector.png" alt=""></a>
-            <a href=""><img src="./media/fb.png" alt=""></a>
+            <a href="#"><img src="./media/Vector.png" alt=""></a>
+            <a href="#"><img src="./media/fb.png" alt=""></a>
         </div>
     </header>
+    <div class="hidden-box" id="hidden-div">
+        <div class="hidden-menu">
+            <h1>MENU</h1>
+        </div>
+        <div class="hidden-list">
+            <ul>
+                <li><a href="./cake.html">Cakes</a></li>
+                <li><a href="#">Muffins</a></li>
+                <li><a href="#">CupCakes</a></li>
+                <li><a href="#">Popsicle</a></li>
+            </ul>
+        </div>
+        <div class="hidden-close">
+            <i id="mmm" class="fa-regular fa-circle-xmark"></i>
+        </div>
+    </div>
     <div class="fil ">
         <div class="f-1">
             <div class="c-f">
@@ -47,7 +69,7 @@
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
             </div>
-            <div class="f-f">
+            <div class="f-f" id="filterby">
                 <div>
                     <i id="fils" class="fa-solid fa-filter"></i>
                 </div>
@@ -61,7 +83,7 @@
             </div>
             <div class="oop">
                     <h4 class="flt-price">FILTER BY PRICE</h4>
-                    <div>
+                    <div class="lines">
                         <div class="line1">
                         </div>
                         <div class="line2">
@@ -102,10 +124,10 @@
                 </div>
             </div>
             <div class="cake-dwn" id="cw">
-                <li><a href="">Butterscotch</a></li>
-                <li><a href="">Chocolate</a></li>
-                <li><a href="">Red Velvet</a></li>
-                <li><a href="">Nutty Bubble</a></li>
+                <li><a href="#">Butterscotch</a></li>
+                <li><a href="#">Chocolate</a></li>
+                <li><a href="#">Red Velvet</a></li>
+                <li><a href="#">Nutty Bubble</a></li>
             </div>
             <hr>
             <div>
@@ -211,8 +233,8 @@
                 <h1 class="flw">Follow us on</h1>
             </div>
             <div class="flw-cn">
-                <a href=""><img src="./media/Vector.png" alt="" ></a>
-                <a href=""><img src="./media/fb.png" alt=""></a>
+                <a href="#"><img src="./media/Vector.png" alt="" ></a>
+                <a href="#"><img src="./media/fb.png" alt=""></a>
             </div>
         </div>
         <div class="ft-rm1">
@@ -223,8 +245,8 @@
                 <p class="ft-p1">Baking your dreams <br> come true.</p>
             </div>
             <div class="icon-2">
-                <a href=""><img src="./media/Vector.png" alt="" ></a>
-                <a href=""><img src="./media/fb.png" alt=""></a>
+                <a href="#"><img src="./media/Vector.png" alt="" ></a>
+                <a href="#"><img src="./media/fb.png" alt=""></a>
             </div>
         </div>
         <div class="ft-2">
@@ -247,14 +269,15 @@
             </div>
             <div class="ft-3bar">
                 <ul>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="./cake.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
