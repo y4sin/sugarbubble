@@ -72,7 +72,7 @@
     padding: 7px 23px;
     border: 0;
     border-radius: 13px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 .ordr-div{
@@ -83,7 +83,7 @@
 }
 .btn-p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 700;
 }
 .side-pic{
@@ -439,7 +439,7 @@
     }
     .main-img{
         position: absolute;
-        top: 55%;
+        top: 47vh;
     }
     .head-sec{
         justify-content: center;
@@ -457,6 +457,7 @@
         right: 16px;
         top: 662px;
         z-index: -1
+        
     }
     .mem,.cakes,.spt-lava,.spt-lavap{
         text-align: center;
@@ -549,5 +550,22 @@
     .bars a{
         padding: .5rem;
         margin: 1.5rem;
+    }
+    .spt-abt{
+        margin: 0px;
+    }
+    .cakes{
+        line-height: 25px;
+        margin-top: 15px;
+    }
+    .pop-c,.pop-1{
+        text-align: center;
+    }
+    .pop-1{
+        margin: 80px 0px 15px 0px;
+    }
+    .pop-h{
+        color:black;
+        font-family: 'Montserrat', sans-serif;
     }
 }

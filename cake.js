@@ -4,6 +4,12 @@ var cake = document.getElementById('do');
 cake.addEventListener('click',()=>{
     down.classList.toggle('hides')
 })
+var test = document.getElementById('open');
+var too = document.getElementById('nu');
+
+too.addEventListener('click',()=>{
+    test.classList.toggle('close')
+})
 
 var filterBox =document.getElementById('fps')
 var filterClose =document.getElementById('ccc')
